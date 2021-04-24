@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio1">
+  <ClassDiagramComponents>
+    <Interface name="CalcularSueldo" package="" visibility="public" xPosition="297.0" yPosition="66.0">
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Empleados" package="" visibility="public" xPosition="184.0" yPosition="235.0">
+      <Fields>
+        <Field name="sueldo_fijo" type="double" visibility="private"/>
+        <Field name="cargo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Docentes" package="" visibility="public" xPosition="425.0" yPosition="235.0">
+      <Fields>
+        <Field name="dicta_hora" type="int" visibility="private"/>
+        <Field name="pago_hora" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Empleados" target="CalcularSueldo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Docentes" target="CalcularSueldo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
